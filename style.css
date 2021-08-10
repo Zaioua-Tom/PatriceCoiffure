@@ -13,106 +13,128 @@ header {
   background-color: #D30C14;
   display: grid;
   align-items: center;
-  max-width: 1500px;
   margin: auto;
-  grid-template-columns: auto 1fr auto auto auto;
-  grid-template-areas: "logo navbar logo2 rendezVous";
+  grid-template-columns: auto 5fr auto;
 }
 
 .logo {
-  grid-area: logo;
+  align-items: center;
+  justify-content: center;
   width: 50px;
 }
 
 .navigation {
-  grid-area: navbar;
+  grid-column: 2/4;
+  grid-row: 1/2;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-  display: inline-flex;
+  font-size: 50px;
+  padding: 0 100px;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  justify-content: center;
   color: white;
+  font-weight: 500;
 }
 
 .titre2 {
+  font-family: "Josefin Sans", sans-serif;
   color: #F2F2F2;
+  font-weight: 200;
 }
 
 .serief {
-  /*position: absolute;*/
   color: black;
-  font-family: "Allura", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .end_title {
-  /*padding-left: 30px;*/
   color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+}
+
+.blocHomme {
+  margin-top: -33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/4;
 }
 
 .homme {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  padding-right: 5px;
   color: #D30C14;
   font-weight: bold;
-  margin: auto;
-  height: 20px;
-  width: 220px;
+  height: 18px;
+  width: 292px;
   background-color: white;
 }
 
 .debut {
-  height: 20px;
+  height: 18px;
   width: 10px;
   background-color: black;
 }
 
-span {
-  color: #661818;
-  font-weight: bold;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .logo2 {
-  grid-area: logo2;
   width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rendez_vous {
-  grid-area: rendezVous;
+  grid-column: 4/5;
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 40px;
   color: black;
   font-weight: 700;
 }
 
 @media screen and (max-width: 1600px) {
-  .website_logo {
-    padding: 40px;
+  .navigation {
+    grid-column: 1/5;
+    display: flex;
+  }
+
+  .blocHomme {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    padding-top: 100px;
+  }
+
+  .rendez_vous {
+    grid-column: 1/5;
+    grid-row: 2/3;
   }
 }
 @media screen and (max-width: 640px) {
-  header {
-    grid-template-areas: "logo . inscrire" "navbar navbar navbar";
+  .navigation {
+    grid-column: 1/5;
+    display: flex;
   }
 
-  .website_logo {
-    padding: 40px;
+  .blocHomme {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    padding-top: 100px;
   }
 
-  .nav_title {
-    border-bottom: 3px solid #F2F2F2;
-    width: 500px;
-    padding: 10px 0;
-  }
-
-  .nav_title:hover {
-    border-bottom-color: #0065FC;
-    border-top: none;
-  }
-
-  .found_lodging {
-    padding: 30px 0 10px 0;
+  .rendez_vous {
+    grid-column: 1/5;
+    grid-row: 2/3;
   }
 }
 .presentation {
