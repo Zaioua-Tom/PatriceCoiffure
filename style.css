@@ -119,6 +119,11 @@ h1 {
 
   }
 }*/
+@media (min-width: 1200px) {
+  .rendez_vous {
+    display: none;
+  }
+}
 @media screen and (max-width: 640px) {
   .header {
     display: grid;
@@ -401,6 +406,7 @@ h1 {
   }
 
   .tarif {
+    margin-left: 20px;
     text-align: justify;
     font-size: 20px;
     font-family: "timberline", sans-serif;
@@ -421,7 +427,88 @@ h1 {
     max-width: 100%;
     grid-column: 3/4;
     grid-row: 5/7;
-    width: 100px;
+    width: 80px;
+  }
+}
+/*Footer*/
+footer {
+  background-color: #D30C14;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(2, auto);
+}
+
+.temps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Dr Sugiyama", cursive;
+  grid-column: 2/3;
+  font-size: 30px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3/4;
+  /*padding: 20px;*/
+  font-size: 20px;
+}
+
+.telFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+@media screen and (max-width: 640px) {
+  footer {
+    background-color: #D30C14;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .temps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Dr Sugiyama", cursive;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    font-size: 30px;
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    /*padding: 20px;*/
+    font-size: 20px;
+  }
+
+  .telFooter {
+    display: flex;
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+
+  .copyright {
+    display: flex;
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 4/5;
   }
 }
 
