@@ -11,6 +11,7 @@ body {
 
 /*Header*/
 header {
+
   background-color: #D30C14; 
   text-align: center;
   padding:10px;
@@ -260,4 +261,130 @@ footer {
   }
 }
 
+
+=======
+  background-color: #D30C14;
+  display: grid;
+  align-items: center;
+  max-width: 1500px;
+  margin: auto;
+  grid-template-columns: auto 1fr auto auto auto;
+  grid-template-areas: "logo navbar logo2 rendezVous";
+}
+
+.logo {
+  grid-area: logo;
+  width: 50px;
+}
+
+.navigation {
+  grid-area: navbar;
+  display: flex;
+}
+
+h1 {
+  display: inline-flex;
+  color: white;
+}
+
+.titre2 {
+  color: #F2F2F2;
+}
+
+.serief {
+  /*position: absolute;*/
+  color: black;
+  font-family: "Allura", cursive;
+}
+
+.end_title {
+  /*padding-left: 30px;*/
+  color: white;
+}
+
+.homme {
+  display: flex;
+  justify-content: flex-end;
+  color: #D30C14;
+  font-weight: bold;
+  margin: auto;
+  height: 20px;
+  width: 220px;
+  background-color: white;
+}
+
+.debut {
+  height: 20px;
+  width: 10px;
+  background-color: black;
+}
+
+span {
+  color: #661818;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo2 {
+  grid-area: logo2;
+  width: 50px;
+}
+
+.rendez_vous {
+  grid-area: rendezVous;
+  display: flex;
+  padding: 40px;
+  color: black;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1600px) {
+  .website_logo {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  header {
+    grid-template-areas: "logo . inscrire" "navbar navbar navbar";
+  }
+
+  .website_logo {
+    padding: 40px;
+  }
+
+  .nav_title {
+    border-bottom: 3px solid #F2F2F2;
+    width: 500px;
+    padding: 10px 0;
+  }
+
+  .nav_title:hover {
+    border-bottom-color: #0065FC;
+    border-top: none;
+  }
+
+  .found_lodging {
+    padding: 30px 0 10px 0;
+  }
+}
+.presentation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.rasoir {
+  padding: 100px;
+  width: 100px;
+}
+
+.barber {
+  width: 1000px;
+  padding: 100px;
+}
+
+.tondeuse {
+  padding: 100px;
+  width: 100px;
+}
 
