@@ -171,6 +171,60 @@ border-radius: 5px;
     grid-row: 4/6;
   }
 }
+@media screen and (max-width: 400px) {
+  
+  .item {
+    width: 40px;
+  }
+
+  .barber {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    max-width: 100%;
+    width: 100px;
+  }
+
+  .titre {
+    font-size: 10px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .red {
+    font-size: 10px;
+    color: #D30C14;
+    font-family: "timberline", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .white {
+    font-size: 10px;
+  }
+
+  .tel {
+    font-size: 10px;
+  }
+
+  .item2 {
+    width: 40px;
+  }
+
+  .tarif {
+    font-size: 15px;
+  }
+
+  .prix {
+    font-size: 15px;
+    
+  }
+
+  .tourniquet {
+    width: 60px;
+    grid-column: 3/4;
+    grid-row: 4/6;
+  }
+}
 /*Footer*/
 footer {
   background-color: #D30C14;
